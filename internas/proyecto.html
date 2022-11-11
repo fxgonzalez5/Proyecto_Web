@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proyecto Web</title>
+	<link rel="icon" href="../images/logo.png" sizes="32x32" />
+    <link rel="icon" href="../images/logo.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="../images/logo.png" />
+
+	<!-- Importación del CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
+	<!-- Importación de tipos de Fuentes -->
+	<link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Mate&display=swap" rel="stylesheet">
+
+	<!-- Importación de fuentes de iconos -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+<body>
+	<div class="contenedor">
+
+		<header class="cabeceraPrincipal">
+			<section class="logotipo"><img src="../images/logotipoFood.png"></section>
+			<nav class="menuPrincipal mayusculas">
+				<a href="../">Inicio</a>
+				<a href="proyecto.html">Proyecto</a>
+				<a href="#">Carta</a>
+				<a href="servicios.html">Servicios</a>
+			</nav>
+		</header>
+
+		<main>
+            <h2 class="colorMarron">Formulario de Postulación a Trabajo</h2>
+		    <form method="post" action="procesar.php">
+		    	<div class="grupoinput">
+		    		<label for="cedula">Cédula <span class="colorRojo">*</span></label>
+		    		<input type="text" id="cedula" name="cedula" placeholder="Ingrese su cédula:">
+		    	</div>
+                <div class="grupoinput">
+		    		<label for="nombres">Nombres <span class="colorRojo">*</span></label>
+		    		<input type="text" id="nombres" name="nombres" placeholder="Ingrese sus nombres:" required>
+		    	</div>
+		    	<div class="grupoinput">
+		    		<label for="apellidos">Apellidos <span class="colorRojo">*</span></label>
+		    		<input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos:">
+		    	</div>
+		    	<div class="grupoinput">
+		    		<label for="telefono">Teléfono <span class="colorRojo">*</span></label>
+		    		<input type="text" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono:">
+		    	</div>
+                <div class="grupoinput">
+                    <label for="fechaNacimiento">Fecha de Nacimiento <span class="colorRojo">*</span></label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" placeholder="Ingrese su fecha de nacimiento:">
+                </div>
+		    	<div class="grupoinput">
+		    		<label for="correo">Correo</label>
+		    		<input type="email" id="correo" name="correo" placeholder="Ingrese su correo:">
+		    	</div>
+                <div class="grupoinput">
+		    		<label for="direccion">Dirección</label>
+		    		<input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección:">
+		    	</div>
+		    	<button class="btn1 colorArtic" type="submit">Guardar Datos</button>
+		    </form>
+        </main>
+
+		<section class="sponsor">
+			<div class="degradado"></div>
+			<img src="../images/fondo2.png">
+			<div class="contenedor1">
+				<h3>Localización</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus dui, convallis rutrum tortor ut, consectetur volutpat urna. In eget diam purus. Quisque non tristique purus. Aenean egestas velit ut justo iaculis, a fringilla mauris.</p>
+			</div>
+			<div class="contenedor2">
+				<h3>Encuéntranos en estos países</h3>
+				<ul>
+					<li>Ecuador</li>
+					<li>México</li>
+					<li>Colombia</li>
+					<li>Perú</li>
+				</ul>
+			</div>
+			<div class="contenedor3">
+				<h3>Categorías</h3>
+				<div class="lista1">
+					<ul>
+						<li>Fritos</li>
+						<li>Mariscos</li>
+						<li>Verduras</li>
+					</ul>
+				</div>
+
+				<div class="lista2">
+					<ul>
+						<li>Granos</li>
+						<li>Sopas</li>
+						<li>Carnes</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contenedor4">
+				<h3>Redes Sociales</h3>
+				<nav class="redesSociales">
+					<a href="#"><iconify-icon icon="et:facebook"></iconify-icon></a>
+					<a href="#"><iconify-icon icon="ph:instagram-logo-thin" width="50" height="50"></iconify-icon></a>
+					<a href="#"><iconify-icon icon="et:twitter"></iconify-icon></a>
+				</nav>
+			</div>
+		</section>
+
+		<footer class="piePagina">
+			<section class="derechos">
+				<h6 class="colorMarron">© Derechos Reservados por Francisco González en colaboración con la Universidad Técnica Particular de Loja</h6>
+			</section>
+		</footer>
+	</div>
+</body>
+</html>
